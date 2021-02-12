@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Shaymaa Khalaf</title>
+    <meta name="description" content="">
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="icofont.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class='container py-5'>
+        <div class='form-group'>
+        <input type='text' id='productName' class='form-control' placeholder='product name'>
+         </div>
+    
+         <div class='form-group'>
+            <input type='text' id='productCompany' class='form-control' placeholder='product company'>
+             </div>
+    
+             <div class='form-group'>
+             <input type='text' id='productPrice' class='form-control' placeholder='product price'>
+             </div>
+    
+            <div class='form-group'>
+            <textarea class='form-control' id='productDescription' placeholder='product description'>
+                </textarea>
+             </div>
+    
+             <button  id='addBtn' class='btn btn-info'>add product</button>
+             <button  id='saveBtn' class='btn btn-info'>Save Changes</button>
+    </div>
+    
+    <div class='container py-5'>
+        <table class='table table-striped'>
+            <thead>
+                <th>product name</th>
+                <th>product company</th>
+                <th>product price</th>
+                <th>product description</th>
+                <th></th>
+                <th>
+                    <input onkeyup="search(this.value)" class='form-control' id="search-input" placeholder="search here ...">
+                   
+                </th>
+            </thead>
+            <tbody id='tableBody'>
+    
+            </tbody>
+        </table>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
